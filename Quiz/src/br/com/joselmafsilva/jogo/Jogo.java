@@ -14,7 +14,7 @@ public class Jogo {
 	public Jogo() {
 		this.scan = new Scanner(System.in);
 		this.cont = 0;
-		this.pontuacao = 0;
+		this.setPontuacao(0);
 		this.questoes= new Questao[100];
 	}
 	public void novoQuestao() {
@@ -35,6 +35,12 @@ public class Jogo {
 
 		questoes[cont] = q;
 		this.cont++;
+	}
+	public int getPontuacao() {
+		return pontuacao;
+	}
+	public void setPontuacao(int pontuacao) {
+		this.pontuacao = pontuacao;
 	}
 	
 }
